@@ -1,0 +1,661 @@
+name: impo
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 4.9.17+125
+
+environment:
+   sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  story_view:
+     git:
+        url: https://github.com/TaakGroup/impo_story.git
+
+  social:
+     path: social
+#     git:
+#        url: https://github.com/TaakGroup/social.git
+
+  taakitecture:
+     git:
+        url: https://github.com/TaakGroup/taakitecture.git
+        ref: main
+
+   # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.3
+  sqflite: ^2.0.0+3
+  http: ^1.0.0
+  flutter_screenutil: ^5.9.0
+  rxdart: ^0.27.1
+#  flutter_cupertino_date_picker: 1.0.26
+  shamsi_date: ^0.14.1
+  path_provider: ^2.1.2
+  angles: ^2.1.1
+  page_transition: ^2.1.0
+#  jalali_calendar: ^1.0.4
+#  date_picker_timeline: ^1.2.3
+  flutter_keyboard_visibility: ^6.0.0
+  pdf: ^3.3.0
+  shared_preferences: ^2.0.6
+  string_validator: ^1.0.2
+#  package_info: ^0.4.1
+  package_info_plus: ^5.0.1
+  url_launcher: ^6.0.20
+  flutter_spinkit: ^5.2.0
+  flutter_local_notifications: ^17.2.2
+
+#  fluttertoast: ^8.2.4
+  firebase_messaging: ^14.6.5
+  firebase_core: ^2.15.0
+  firebase_crashlytics: ^3.3.4
+#  android_alarm_manager: 0.4.5+11
+  android_alarm_manager_plus: 3.0.1
+  fading_edge_scrollview: ^4.1.1
+  dotted_border: ^2.0.0
+  simple_animations: ^3.1.1
+  local_auth: ^2.1.3
+#  flutter_material_pickers: ^3.6.0
+  device_info_plus: any
+  sliding_up_panel: ^2.0.0+1
+  connectivity_plus: ^3.0.4
+  flutter_rating_bar: ^4.0.1
+  image_picker: ^1.0.7
+  file_picker: ^5.3.2
+  permission_handler: ^10.2.0
+  percent_indicator: ^4.2.3
+  audioplayers: ^5.2.1
+  assets_audio_player: ^3.0.6
+#  seekbar: ^0.0.2
+  uni_links: ^0.5.1
+  clipboard: ^0.1.3
+  share_plus: ^2.1.4
+#  webfeed: ^0.7.0
+  qr_flutter: ^4.0.0
+  screenshot: ^3.0.0
+  open_file_plus: ^3.4.1
+  cached_network_image: ^3.3.1
+  photo_view: ^0.14.0
+  dio: ^5.3.2
+  provider: ^6.0.5
+  flutter_svg: ^2.0.9
+  flutter_native_image: ^0.0.6+1
+  simple_shadow: ^0.2.0
+  numberpicker: ^2.1.2
+  get_it: ^7.2.0
+#  fdottedline: ^1.0.1
+  fdottedline_nullsafety: ^2.0.1
+  image_sequence_animator: ^2.0.0
+  image_cropper: ^5.0.1
+  disable_battery_optimization: ^1.1.0+1
+  lottie: ^3.1.1
+#  cafebazaar_flutter: ^1.0.2
+#  flutter_poolakey: ^2.2.0
+  myket_iap: ^1.1.5
+  firebase_analytics: ^10.4.4
+  carousel_slider: ^5.0.0
+  android_intent_plus: ^4.0.3
+   #  metrix_plugin: ^1.5.0
+  like_button: ^2.0.5
+  fancy_shimmer_image: ^2.0.3
+  webview_flutter: ^4.4.2
+  auto_size_text: ^3.0.0
+  installed_apps: ^1.5.0
+  get: ^4.6.6
+  logger: ^1.3.0
+  get_storage: ^2.1.1
+  responsive_framework: ^0.2.0
+  vibration: ^1.8.4
+  sms_autofill: ^2.3.1
+  pin_code_fields: ^8.0.1
+  shimmer: any
+  glass_kit: ^4.0.1
+  animation_list: ^3.0.0
+  app_links: ^6.1.4
+  timezone: ^0.9.4
+  flutter_native_timezone: ^2.0.0
+  adtrace_sdk_flutter: ^1.5.0
+
+  flutter_localizations:
+   sdk: flutter
+
+dev_dependencies:
+  image_res: ^0.3.0
+  platform: ^3.1.0
+#  flutter_launcher_icons: ^0.9.0
+  intl: ^0.19.0
+  universal_html: ^2.2.4
+  dartz: ^0.10.1
+  archive: ^3.6.1
+  win32: ^5.5.4
+
+#flutter_icons:
+#  image_path: "assets/launcher/file.png"
+#  ios: true
+#  android: true
+
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - assets/images/system_profile_icon.png
+     - assets/images/system_profile_send.png
+     - assets/gif/barvari-fG.gif
+     - assets/gif/rooze-adiG.gif
+     - assets/gif/rooze-adiG_1.gif
+     - assets/gif/pmsG.gif
+     - assets/gif/ghaedegiG.gif
+     - assets/images/plus.png
+     - assets/images/impo_icon.png
+     - assets/images/period_icon.png
+     - assets/images/icon_account.png
+     - assets/images/logout.png
+     - assets/images/uboosat_darperiod_1.png
+     - assets/images/uboosat_darperiod_0.png
+     - assets/images/tanbalitokhmdan_sayer_1.png
+     - assets/images/tanbalitokhmdan_sayer_0.png
+     - assets/images/sardard_ghablazghedegi_1.png
+     - assets/images/sardard_ghablazghedegi_0.png
+     - assets/images/oftetabavari_sayer_1.png
+     - assets/images/oftetabavari_sayer_0.png
+     - assets/images/navasanekholgh_sayer_1.png
+     - assets/images/navasanekholgh_sayer_0.png
+     - assets/images/nafkh_darperiod_1.png
+     - assets/images/nafkh_darperiod_0.png
+     - assets/images/nadikibyaesegi_asyer_1.png
+     - assets/images/nadikibyaesegi_asyer_0.png
+     - assets/images/meylbtanhaee_sayer_1.png
+     - assets/images/meylbtanhaee_sayer_0.png
+     - assets/images/kooftegibadan_ghablazghaedegi_1.png
+     - assets/images/kooftegibadan_ghablazghaedegi_0.png
+     - assets/images/khashm_sayer_1.png
+     - assets/images/khashm_sayer_0.png
+     - assets/images/kamardard_darperiod_1.png
+     - assets/images/kamardard_darperiod_0.png
+     - assets/images/kaheshemeylejenc_sayer_1.png
+     - assets/images/kaheshemeylejenc_sayer_0.png
+     - assets/images/jooshsoorat_darperiod_1.png
+     - assets/images/jooshsoorat_darperiod_0.png
+     - assets/images/ghorsebardari_sayer_1.png
+     - assets/images/ghorsebardari_sayer_0.png
+     - assets/images/eshal_darperiod_1.png
+     - assets/images/eshal_darperiod_0.png
+     - assets/images/ekhtelalekhab_darperiod_1.png
+     - assets/images/ekhtelalekhab_darperiod_0.png
+     - assets/images/deldard_darperiod_1.png
+     - assets/images/deldard_darperiod_0.png
+     - assets/images/darooafsordegi_sayer_1.png
+     - assets/images/darooafsordegi_sayer_0.png
+     - assets/images/dardesine_ghablazghaedegi_1.png
+     - assets/images/dardesine_ghablazghaedegi_0.png
+     - assets/images/azterab_sayer_1.png
+     - assets/images/azterab_sayer_0.png
+     - assets/images/afsordegi_sayer_1.png
+     - assets/images/afsordegi_sayer_0.png
+     - assets/images/pass_icon.png
+     - assets/images/file.png
+     - assets/images/ic_about_telegram.png
+     - assets/images/ic_about_instagram.png
+     - assets/images/ic_about_web.png
+     - assets/images/ic_about_twiter.png
+     - assets/images/selected_normal.png
+     - assets/images/selected_period.png
+     - assets/images/selected_fert.png
+     - assets/images/selected_pms.png
+     - assets/images/circle_normal.png
+     - assets/images/circle_period.png
+     - assets/images/circle_fert.png
+     - assets/images/circle_pms.png
+     - assets/images/ic_note.png
+     - assets/images/ic_clock.png
+     - assets/images/ic_question.png
+     - assets/images/ic_impo_profile.png
+     - assets/images/ic_polar.png
+     - assets/images/ic_midwife.png
+     - assets/images/ic_nutritionist.png
+     - assets/images/ic_psychologist.png
+     - assets/images/layer.png
+     - assets/images/question.png
+     - assets/images/icon_expert_dialog.png
+     - assets/images/ic_attach.png
+     - assets/images/polar.png
+     - assets/images/ic_camera.png
+     - assets/images/ic_dcoument.png
+     - assets/images/ic_photo.png
+     - assets/images/ic_pdf.png
+     - assets/images/ic_user.png
+     - assets/images/ic_send.png
+     - assets/images/ic_shop.png
+     - assets/images/ic-download.png
+     - assets/images/ic_file.png
+     - assets/images/ic_star.png
+     - assets/images/support.png
+     - assets/images/ic_enter_face_code.png
+     - assets/images/ic_copy.png
+     - assets/images/place_holder_articel.png
+     - assets/images/ic_clock_main.png
+     - assets/images/khon_fert.png
+     - assets/images/khon_normal.png
+     - assets/images/khon_pms.png
+     - assets/images/khon_period.png
+     - assets/images/baner_interface.png
+     - assets/images/ic_reporting.png
+     - assets/images/ic_partner.png
+     - assets/images/ic_big_partner.png
+     - assets/images/ic_big_support.png
+     - assets/images/ic_big_myimpo.png
+     - assets/images/ic_share_link.png
+     - assets/images/ic_play_store.png
+     - assets/images/ic_download_impo.png
+     - assets/images/ic_history_reporting.png
+     - assets/images/ic_reporting_pdf.png
+     - assets/images/ic_typeCalendar.png
+     - assets/images/ic_link_.png
+     - assets/images/ic_note_hamdel.png
+     - assets/images/ic_heart.png
+     - assets/images/ic_share_pdf.png
+     - assets/images/ic_global_expert.png
+     - assets/images/ic_law.png
+     - assets/images/ic_sextherapy.png
+     - assets/images/ic_diary.svg
+     - assets/images/ic_arrow_back.svg
+     - assets/images/ic_big_memory.svg
+     - assets/images/ic_no_memory.svg
+     - assets/images/ic_camera.svg
+     - assets/images/ic_gallery.svg
+     - assets/images/ic_attach.svg
+     - assets/images/ic_delete_forever.svg
+     - assets/images/ic_close.svg
+     - assets/images/ic_delete_dialog.svg
+     - assets/images/ic_delete_note.svg
+     - assets/images/ic_placeholder_memory.png
+     - assets/images/ic_profile_partner.svg
+     - assets/images/ic_send_message.svg
+     - assets/images/ic_small_send_message.svg
+     - assets/images/expert_selected.svg
+     - assets/images/expert_unselected.svg
+     - assets/images/baby_selected.svg
+     - assets/images/baby_unselected.svg
+     - assets/images/partner_selected.svg
+     - assets/images/partner_unselected.svg
+     - assets/images/blog_selected.svg
+     - assets/images/blog_unselected.svg
+     - assets/images/calendar_selected.svg
+     - assets/images/calendar_unselected.svg
+     - assets/images/main_selected.svg
+     - assets/images/main_unselected.svg
+     - assets/images/ic_call.svg
+     - assets/images/ic_pass.svg
+     - assets/images/ic_mobile.svg
+     - assets/images/ic_email.svg
+     - assets/images/ic_name.svg
+     - assets/images/ic_box_question.svg
+     - assets/images/ic_enter_face_code.svg
+     - assets/images/ic_profile_enter_face_code.png
+     - assets/images/ic_gray_email.svg
+     - assets/images/ic_arrow_back.svg
+     - assets/images/ic_repeat.svg
+     - assets/images/water.svg
+     - assets/images/mobile.svg
+     - assets/images/ic_alarm.svg
+     - assets/images/volume_up.svg
+     - assets/images/volume_off.svg
+     - assets/images/drug.svg
+     - assets/images/fruit.svg
+     - assets/images/study.svg
+     - assets/images/sport.svg
+     - assets/images/sleep.svg
+     - assets/images/ic_tip_alarm.svg
+     - assets/images/pad.svg
+     - assets/images/ic_date.svg
+     - assets/images/ic_reminder.svg
+     - assets/images/event_note.svg
+     - assets/images/ic_change_cycle.svg
+     - assets/images/ic_profile_about.svg
+     - assets/images/ic_profile_myImpo.svg
+     - assets/images/ic_profile_reporting.svg
+     - assets/images/ic_profile_support.svg
+     - assets/images/browser.svg
+     - assets/images/telegram.svg
+     - assets/images/twitter.svg
+     - assets/images/insta.svg
+     - assets/images/ic_big_myimpo.svg
+     - assets/images/ic_myimpo_account.svg
+     - assets/images/ic_myimpo_calanderType.svg
+     - assets/images/ic_myimpo_pass.svg
+     - assets/images/ic_big_calendar-type.svg
+     - assets/images/ic_big_support.svg
+     - assets/images/ic_big_pass.svg
+     - assets/images/ic_edit.svg
+     - assets/images/ic_big_historyReporting.svg
+     - assets/images/ic_big_reporting.svg
+     - assets/images/ic_logout.svg
+     - assets/images/ic_pdf.svg
+     - assets/images/ic_share.svg
+     - assets/images/ic_big_partner.svg
+     - assets/images/ic_small_partner.svg
+     - assets/images/ic_bottom_partner.svg
+     - assets/images/ic_top_partner.svg
+     - assets/images/ic_psychologist.svg
+     - assets/images/ic_sexuality.svg
+     - assets/images/ic_law.svg
+     - assets/images/ic_nutritionist.svg
+     - assets/images/ic_global_expert.svg
+     - assets/images/ic_midwife.svg
+     - assets/images/ic_main_expert.svg
+     - assets/images/ic_big_question.svg
+     - assets/images/ic_correct.svg
+     - assets/images/ic_sexuality.png
+     - assets/images/ic_takhfif_1.svg
+     - assets/images/ic_takhfif_2.svg
+     - assets/images/ic_takhfif_3.svg
+     - assets/images/ic_big_shop.svg
+     - assets/images/ic_document.svg
+     - assets/images/ic_polar.svg
+     - assets/images/ic_expert_profile.svg
+     - assets/images/ic_box_correct.svg
+     - assets/images/ic_download.svg
+     - assets/images/ic_star.svg
+     - assets/images/ic_expert_send.svg
+     - assets/images/ic_bottomRight_expert.svg
+     - assets/images/ic_topLeft_expert.svg
+     - assets/images/ic_event_calendar.svg
+     - assets/images/info_outline.svg
+     - assets/images/ic_emotional.svg
+     - assets/images/ic_power.svg
+     - assets/images/ic_mental.svg
+     - assets/images/ic_emotional_active.svg
+     - assets/images/ic_power_active.svg
+     - assets/images/ic_mental_active.svg
+     - assets/images/ic_big_change_cycle.svg
+     - assets/images/ic_help.svg
+     - assets/images/ic_help_normal.svg
+     - assets/images/ic_help_period.svg
+     - assets/images/ic_help_oval.svg
+     - assets/images/ic_help_pms.svg
+     - assets/images/ic_no_partner.svg
+     - assets/images/ic_box_emotional.png
+     - assets/images/ic_box_mental.png
+     - assets/images/ic_box_power.png
+     - assets/images/ic_feedback.svg
+     - assets/images/frame.png
+     - assets/images/vaginismus_sayer_0.png
+     - assets/images/vaginismus_sayer_1.png
+     - assets/images/dandan_ovu_0.png
+     - assets/images/dandan_ovu_1.png
+     - assets/images/lakebini_ovu_0.png
+     - assets/images/lakebini_ovu_1.png
+     - assets/images/deldard_ovu_0.png
+     - assets/images/deldard_ovu_1.png
+     - assets/images/navasanekholgh_ovu_0.png
+     - assets/images/navasanekholgh_ovu_1.png
+     - assets/images/bieshteha_ghablazghedegi_0.png
+     - assets/images/bieshteha_ghablazghedegi_1.png
+     - assets/images/gor_ghablazghedegi_0.png
+     - assets/images/gor_ghablazghedegi_1.png
+     - assets/images/highsexi_ghablazghedegi_0.png
+     - assets/images/highsexi_ghablazghedegi_1.png
+     - assets/images/larz_ghablazghedegi_0.png
+     - assets/images/larz_ghablazghedegi_1.png
+     - assets/images/padard_ghablazghedegi_0.png
+     - assets/images/padard_ghablazghedegi_1.png
+     - assets/images/porkhori_ghablazghedegi_0.png
+     - assets/images/porkhori_ghablazghedegi_1.png
+     - assets/images/rizeshmo_ghablazghedegi_0.png
+     - assets/images/rizeshmo_ghablazghedegi_1.png
+     - assets/images/ic_cheshm.svg
+     - assets/images/ic_big_history_polar.svg
+     - assets/images/ic_history_polar.svg
+     - assets/images/test.svg
+     - assets/images/baby_state.svg
+     - assets/images/ghaedegi_state.svg
+     - assets/images/delete_icon.svg
+     - assets/pregnancyImages/Comp00.png
+     - assets/pregnancyImages/Comp01.png
+     - assets/pregnancyImages/Comp02.png
+     - assets/pregnancyImages/Comp03.png
+     - assets/pregnancyImages/Comp04.png
+     - assets/pregnancyImages/Comp05.png
+     - assets/pregnancyImages/Comp06.png
+     - assets/pregnancyImages/Comp07.png
+     - assets/pregnancyImages/Comp08.png
+     - assets/pregnancyImages/Comp09.png
+     - assets/pregnancyImages/Comp10.png
+     - assets/pregnancyImages/Comp11.png
+     - assets/pregnancyImages/Comp12.png
+     - assets/pregnancyImages/Comp13.png
+     - assets/pregnancyImages/Comp14.png
+     - assets/pregnancyImages/Comp15.png
+     - assets/pregnancyImages/Comp16.png
+     - assets/pregnancyImages/Comp17.png
+     - assets/pregnancyImages/Comp18.png
+     - assets/pregnancyImages/Comp19.png
+     - assets/pregnancyImages/Comp20.png
+     - assets/pregnancyImages/Comp21.png
+     - assets/pregnancyImages/Comp22.png
+     - assets/pregnancyImages/Comp23.png
+     - assets/pregnancyImages/Comp24.png
+     - assets/pregnancyImages/Comp25.png
+     - assets/pregnancyImages/Comp26.png
+     - assets/pregnancyImages/Comp27.png
+     - assets/pregnancyImages/Comp28.png
+     - assets/pregnancyImages/Comp29.png
+     - assets/pregnancyImages/Comp30.png
+     - assets/pregnancyImages/Comp31.png
+     - assets/pregnancyImages/Comp32.png
+     - assets/pregnancyImages/Comp33.png
+     - assets/pregnancyImages/Comp34.png
+     - assets/pregnancyImages/Comp35.png
+     - assets/pregnancyImages/Comp36.png
+     - assets/pregnancyImages/Comp37.png
+     - assets/pregnancyImages/Comp38.png
+     - assets/pregnancyImages/Comp39.png
+     - assets/pregnancyImages/Comp40.png
+     - assets/pregnancyImages/Comp41.png
+     - assets/pregnancyImages/Comp42.png
+     - assets/pregnancyImages/Comp43.png
+     - assets/pregnancyImages/Comp44.png
+     - assets/pregnancyImages/Comp45.png
+     - assets/pregnancyImages/Comp46.png
+     - assets/pregnancyImages/Comp47.png
+     - assets/pregnancyImages/Comp48.png
+     - assets/pregnancyImages/Comp49.png
+     - assets/pregnancyImages/subtraction.png
+     - assets/pregnancyImages/week1.jpg
+     - assets/pregnancyImages/week2.jpg
+     - assets/pregnancyImages/week3.jpg
+     - assets/pregnancyImages/week4.jpg
+     - assets/pregnancyImages/week5.jpg
+     - assets/pregnancyImages/week6.jpg
+     - assets/pregnancyImages/week7.jpg
+     - assets/pregnancyImages/week8.jpg
+     - assets/pregnancyImages/week9.jpg
+     - assets/pregnancyImages/week10.jpg
+     - assets/pregnancyImages/week11.jpg
+     - assets/pregnancyImages/week12.jpg
+     - assets/pregnancyImages/week13.jpg
+     - assets/pregnancyImages/week14.jpg
+     - assets/pregnancyImages/week15.jpg
+     - assets/pregnancyImages/week16.jpg
+     - assets/pregnancyImages/week17.jpg
+     - assets/pregnancyImages/week18.jpg
+     - assets/pregnancyImages/week19.jpg
+     - assets/pregnancyImages/week20.jpg
+     - assets/pregnancyImages/week21.jpg
+     - assets/pregnancyImages/week22.jpg
+     - assets/pregnancyImages/week23.jpg
+     - assets/pregnancyImages/week24.jpg
+     - assets/pregnancyImages/week25.jpg
+     - assets/pregnancyImages/week26.jpg
+     - assets/pregnancyImages/week27.jpg
+     - assets/pregnancyImages/week28.jpg
+     - assets/pregnancyImages/week29.jpg
+     - assets/pregnancyImages/week30.jpg
+     - assets/pregnancyImages/week31.jpg
+     - assets/pregnancyImages/week32.jpg
+     - assets/pregnancyImages/week33.jpg
+     - assets/pregnancyImages/week34.jpg
+     - assets/pregnancyImages/week35.jpg
+     - assets/pregnancyImages/week36.jpg
+     - assets/pregnancyImages/week37.jpg
+     - assets/pregnancyImages/week38.jpg
+     - assets/pregnancyImages/week39.jpg
+     - assets/pregnancyImages/week40.jpg
+     - assets/pregnancyImages/week41.jpg
+     - assets/pregnancyImages/week42.jpg
+     - assets/images/ic_setting.svg
+     - assets/json/
+     - assets/images/back_zayman.png
+     - assets/images/frame_zayman.png
+     - assets/images/baby_setting.svg
+     - assets/images/ic_under_text.png
+     - assets/images/ic_under_text.svg
+     - assets/images/dialog_aboration.svg
+     - assets/images/parvane.svg
+     - assets/images/ic_under_text1.svg
+     - assets/images/back_bardari.png
+     - assets/images/frame_bardari.png
+     - assets/images/breastfeeding_main.png
+     - assets/images/correct_dialog.svg
+     - assets/images/Danger.svg
+     - assets/images/certical_dialog.svg
+     - assets/images/breastfeeding_setting.svg
+     - assets/images/breastfeeding_selected.svg
+     - assets/images/breastfeeding_unselected.svg
+     - assets/images/place_holder_adv.png
+     - assets/images/ic_offlineMode.svg
+     - assets/images/ic_repeat_rounded.svg
+     - assets/images/offline_alarm.svg
+     - assets/images/offline_calendar.svg
+     - assets/images/emergency_medicine_clinic.svg
+     - assets/images/obstetrics_gynecology_clinic.svg
+     - assets/images/mental_clinic.svg
+     - assets/images/sex_therapy_clinic.png
+     - assets/images/ic_skin.svg
+     - assets/images/skin_clinic.svg
+     - assets/images/pregnancy_women.png
+     - assets/images/sexTherapy.png
+     - assets/images/psychology.png
+     - assets/images/global_clinic.png
+     - assets/images/history_ticket.svg
+     - assets/images/star.svg
+     - assets/images/tic.svg
+     - assets/images/prescription.png
+     - assets/images/period_banner.webp
+     - assets/images/reporting_banner.webp
+     - assets/images/pregnancy_banner.webp
+     - assets/images/partner_banner.webp
+     - assets/images/fert_banner.webp
+     - assets/images/clinic_banner.webp
+     - assets/images/calendar_pregnancy_banner.webp
+     - assets/images/memory_game_partner_slider.webp
+     - assets/images/cycle_partner_slider.webp
+     - assets/images/send_message_partner_slider.webp
+     - assets/images/pregnancy_partner_slider.webp
+     - assets/images/or_separated.svg
+     - assets/images/ic_refresh.svg
+     - assets/images/call.svg
+     - assets/images/ic_profile_call.png
+     - assets/images/ic_profile_update.png
+     - assets/images/update_page.png
+     - assets/images/rate_store.png
+     - assets/images/ic_profile_rate.png
+     - assets/images/gift.svg
+     - assets/images/edit_share.svg
+     - assets/images/girl_taking_funny.png
+     - assets/images/like_full.svg
+     - assets/images/dislike_full.svg
+     - assets/images/like_empty.svg
+     - assets/images/dislike_empty.svg
+     - assets/images/Avatar1.webp
+     - assets/json/like.json
+     - assets/images/ic_myimpo_cycle.svg
+     - assets/images/ic_myimpo_period.svg
+     - assets/images/ic_myimpo_sub.svg
+     - assets/images/ic_profile_pregnancy.png
+     - assets/images/profile_user.svg
+     - assets/images/comment.svg
+     - assets/images/empty_state_comment.svg
+     - assets/images/ic_delete.svg
+     - assets/images/verify.svg
+     - assets/images/add_photo.svg
+     - assets/images/humidity_high.svg
+     - assets/images/topic.svg
+     - assets/images/ic_message.svg
+     - assets/images/support_online.png
+     - assets/images/bell.png
+     - assets/images/border_color.svg
+     - assets/images/ic_need_expert.svg
+     - assets/images/back_partner.webp
+     - assets/images/ic_history_partner.svg
+     - assets/images/empty_archive_challenge.webp
+     - assets/musics/
+     - assets/images/
+     - assets/json/
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  fonts:
+#    - family: IRANYekan
+#      fonts:
+#        - asset: fonts/yekan_regular.ttf
+#        - asset: fonts/yekan_medium.ttf
+#        - asset: fonts/yekan_bold.ttf
+#        - asset: fonts/yekan_extra_bold.ttf
+    - family: YekanBakh
+      fonts:
+         - asset: fonts/yekanBakh/YekanBakhFaNum-Black.ttf
+         - asset: fonts/yekanBakh/YekanBakhFaNum-Bold.ttf
+         - asset: fonts/yekanBakh/YekanBakhFaNum-ExtraBlack.ttf
+         - asset: fonts/yekanBakh/YekanBakhFaNum-ExtraBold.ttf
+         - asset: fonts/yekanBakh/YekanBakhFaNum-Light.ttf
+         - asset: fonts/yekanBakh/YekanBakhFaNum-Regular.ttf
+         - asset: fonts/yekanBakh/YekanBakhFaNum-SemiBold.ttf
+         - asset: fonts/yekanBakh/YekanBakhFaNum-Thin.ttf
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

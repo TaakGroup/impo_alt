@@ -1,0 +1,124 @@
+name: social
+description: "Share Experience Package"
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.6.5
+  dio: ^5.3.2
+  intl: ^0.19.0
+  get_storage: ^2.1.1
+  logger: ^1.3.0
+  shamsi_date: 0.14.1
+  device_info_plus: ^9.0.2
+  package_info_plus: ^5.0.1
+  internet_connection_checker: ^1.0.0+1
+  connectivity_plus: ^3.0.4
+  open_file_plus: ^3.4.1
+  dartz: ^0.10.1
+
+
+  # Feature packages
+  responsive_framework: ^0.2.0
+  flutter_svg: ^2.0.4
+  loading_indicator: ^3.1.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.2.3
+  badges: ^3.1.1
+  persian_number_utility: ^1.1.3
+  persian_tools: ^1.0.3
+  equatable: ^2.0.5
+  image_picker: ^1.0.7
+  flutter_image_compress: ^2.1.0
+  image_cropper: ^5.0.1
+  file_picker: ^5.3.2
+  flutter_cache_manager: ^3.3.1
+  blur: ^3.1.0
+
+
+  taakitecture:
+    git:
+      url: https://github.com/TaakGroup/taakitecture.git
+      ref: main
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  pulsator: ^1.0.0+2
+  glowy_borders: ^1.0.2
+  permission_handler: ^10.2.0
+
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+
+# The following section is specific to Flutter packages.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.social
+        pluginClass: SocialPlugin
+      ios:
+        pluginClass: SocialPlugin
+      web:
+        pluginClass: SocialWeb
+        fileName: social_web.dart
+
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - packages/social/assets/images/like.svg
+    - packages/social/assets/images/like_fill.svg
+    - packages/social/assets/images/dislike.svg
+    - packages/social/assets/images/dislike_fill.svg
+    - packages/social/assets/images/reply.svg
+    - packages/social/assets/images/verify.svg
+    - packages/social/assets/images/message_fill.svg
+    - packages/social/assets/images/arrow_right.svg
+    - packages/social/assets/images/gallery_add.svg
+    - packages/social/assets/images/gallery.svg
+    - packages/social/assets/images/camera.svg
+    - packages/social/assets/images/bell_ringing.svg
+    - packages/social/assets/images/camera_rotate.svg
+    - packages/social/assets/images/message_question.svg
+    - packages/social/assets/images/bell_ringing_fill.svg
+    - packages/social/assets/images/back.svg
+    - packages/social/assets/images/edit.svg
+    - packages/social/assets/images/trash.svg
+    - packages/social/assets/images/close.svg
+    - packages/social/assets/images/arrow_left.svg
+    - packages/social/assets/images/check.svg
+    - packages/social/assets/images/send_comment.svg
+    - packages/social/assets/images/tickets.webp
+    - packages/social/assets/images/server_failure.webp
+    - packages/social/assets/images/network_failure.webp
+    - packages/social/assets/images/bell.webp
+    - packages/social/assets/images/message_bubble.webp
+    - packages/social/assets/images/warning.svg
+
+
+  fonts:
+    - family: YekanBakh
+      fonts:
+        - asset: packages/social/assets/fonts/yekanBakh/YekanBakhFaNum-Bold.ttf
+        - asset: packages/social/assets/fonts/yekanBakh/YekanBakhFaNum-SemiBold.ttf
+        - asset: packages/social/assets/fonts/yekanBakh/YekanBakhFaNum-Regular.ttf
+        - asset: packages/social/assets/fonts/yekanBakh/YekanBakhFaNum-Light.ttf

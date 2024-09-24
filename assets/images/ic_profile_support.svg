@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.231" y1="-0.605" x2="1" y2="0.638" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7c73e6"/>
+      <stop offset="1" stop-color="#b2abff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_27904" data-name="Group 27904" transform="translate(-5622 -3230)">
+    <rect id="Rectangle_2020" data-name="Rectangle 2020" width="57" height="57" transform="translate(5622 3230)" fill="none" opacity="0"/>
+    <path id="Path_39907" data-name="Path 39907" d="M38.981,20.945A17.527,17.527,0,0,0,21.464,3C12.335,3,3.946,10.1,3.946,21.062A3.83,3.83,0,0,0,2,24.41V28.3A3.9,3.9,0,0,0,5.893,32.2a1.952,1.952,0,0,0,1.946-1.946V20.887c0-7.455,5.742-13.975,13.2-14.189A13.638,13.638,0,0,1,35.088,20.323V34.142H21.464a1.946,1.946,0,0,0,0,3.893H35.088a3.9,3.9,0,0,0,3.893-3.893V31.767a3.6,3.6,0,0,0,1.946-3.192V24.1A3.584,3.584,0,0,0,38.981,20.945Z" transform="translate(5629 3238)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
